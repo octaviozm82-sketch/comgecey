@@ -6,8 +6,7 @@
 - Para médicos generales con cédula y comprobante de ejercicio profesional en institución pública o privada.
 - Examen teórico en línea: 31 de octubre de 2026.
 - Registro y entrega de documentos hasta el 30 de septiembre de 2026.
-- Cuota: $4,500.00 MXN por depósito bancario a la cuenta que proporcione la institución. Sin devoluciones.
-- Confirmación del pago: pendiente de confirmar con el cliente; no hay procedimiento publicado.
+- Cuota: $4,500.00 MXN por depósito bancario a la cuenta del Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C. Sin devoluciones.
 - Certificado con vigencia de cinco años. Renovación por examen o currículum, según convocatoria nacional.
 
 ## Requisitos
@@ -24,8 +23,6 @@
 - WhatsApp: +52 999 997 7170, https://wa.me/529999977170
 - Correo: comgecey@gmail.com
 - Domicilio: Calle 88B #506 x 90A, Fracc. Itzáes, CP 97068, Mérida, Yucatán.
-- Horario de recepción: pendiente de confirmar con el cliente.
-- Presidenta: Dra. Eny Antonia Cambranis Maza.
 
 ## Enlaces
 - [Inicio](https://comgecey.vercel.app/): convocatoria, requisitos, pago, preguntas y contacto.

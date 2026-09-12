@@ -17,6 +17,8 @@ Base revisada: `octaviozm82-sketch/comgecey`, rama `main`, commit `8338752`. El 
 
 ## P2 y P3
 
+Último ajuste de contenido solicitado: se retiraron los placeholders visibles de horario y confirmación del pago, la mención de falta de plataforma/enlace, la pregunta sobre no aprobar y la mención a la presidenta. FAQPage tiene ahora nueve preguntas, idénticas a las visibles; se retiró también el dato de presidenta del JSON-LD y llms.txt. El contacto para pago muestra «Información» con ícono de WhatsApp; la cuenta se identifica con el nombre legal del consejo. La fecha de referencia del 11 de septiembre y los 19 días restantes se muestran en mayor tamaño, manteniendo su carácter de dato estático fechado.
+
 La instrucción posterior del cliente reemplaza el hero centrado en el examen: el título principal ahora es «Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C.» y el examen aparece como subtítulo. Se retiró la frase «Medicina general · Yucatán» de la cabecera. Se expandieron las menciones institucionales a sus nombres completos con A.C., confirmado por el cliente; se añadieron tonos plateados para texto secundario y dorado para datos destacados. La denominación abreviada solo permanece como alias técnico en los datos estructurados.
 
 Actualización de identidad solicitada por el cliente: vino #4A1220, blanco roto #FAF7F2 y vino claro #E7CCD3 en cabecera, ficha, contacto y pie; dorado decorativo #B08D45. El JPEG entregado no contiene una muestra identificable de vino, por lo que se utiliza la referencia del cliente. Se conserva un único tema claro con superficies institucionales vino. Logo original entregado, sin recreación, en cabecera y pie; rutas relativas compatibles con apertura local.
