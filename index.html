@@ -177,8 +177,8 @@
 :root{color-scheme:light;--paper:#faf9f5;--navy:#4A1220;--navy-ink:#FAF7F2;--navy-ink-soft:#E7CCD3;--accent:#B08D45;--ink:var(--navy);--muted:#6B414A;--green:#1b7a43;--line:#d8c6ca;--tint:#f3e9eb;--gold:#786132;font:16px/1.6 Arial,sans-serif;color:var(--ink);background:var(--paper)}
 *{box-sizing:border-box}body{margin:0}a{color:var(--navy);text-underline-offset:4px}a:hover{color:#701c31;text-decoration-thickness:2px}a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px}img{display:block}h1,h2,h3,p{margin-top:0}h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.12}h1{font-size:clamp(36px,4.15vw,58px);letter-spacing:-1.8px;margin-bottom:24px}h2{font-size:36px;letter-spacing:-.7px;margin-bottom:20px}h3{font-size:18px;line-height:1.4;margin-bottom:10px}p{margin-bottom:20px}small{font-size:14px}
 /* 1180 px útiles + 80 px de padding: bordes de contenido 110/1290 a 1400 px. */
-.wrap{max-width:1260px;margin:0 auto;padding:0 40px}.skip{position:absolute;top:-100px;left:20px;padding:12px 20px;background:white;z-index:30}.skip:focus{top:8px}.site-header{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%)}.header-row{height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;min-height:44px;text-decoration:none;color:var(--ink);font:23px Georgia,serif}.brand img{width:44px;height:44px;object-fit:contain}.nav{display:flex;gap:28px;align-items:center}.nav a{font-size:14px;color:var(--ink);display:inline-flex;align-items:center;min-height:44px;text-decoration:none}.nav a:hover{text-decoration:underline}
-.hero{padding:58px 0}.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.87fr);gap:80px;align-items:center}.hero h1 span{display:block;color:var(--gold);font-size:.68em;margin-top:18px;letter-spacing:-.5px}.hero-copy>p{max-width:480px;font-size:18px;color:var(--muted)}.hero-media{border-radius:8px;overflow:hidden;background:var(--navy);aspect-ratio:4/5}.hero-media video{width:100%;height:100%;object-fit:cover;display:block}.button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 26px;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,0) 60%),var(--green);color:white;text-decoration:none;font-weight:700;border:1px solid #145d33;border-radius:6px;box-shadow:0 1px 0 rgba(255,255,255,.3) inset,0 8px 20px -10px rgba(19,74,42,.65)}.button:hover{background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0) 60%),#175a34;color:white;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 10px 24px -10px rgba(19,74,42,.75)}.download-note{display:block;margin-top:10px;color:var(--muted)}.callout{position:relative;overflow:hidden;background:var(--tint);border-top:3px solid var(--gold);padding:26px 30px}.callout>*{position:relative;z-index:1}.callout::before{content:'';position:absolute;right:-30px;bottom:-30px;width:220px;height:220px;background:url('./assets/sello-comgecey.svg') center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}.callout-wide{margin-top:36px}.callout-row{margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}.callout-row>div{padding:4px 26px;border-left:1px solid #805461}.callout-row>div:first-child{padding-left:0;border-left:0}.callout dt{font-size:14px;color:var(--muted);margin-bottom:4px}.callout dd{margin:0;font-size:21px;line-height:1.35}.callout .delivery-link{font-size:16px}.deadline-note{font-size:14px;color:var(--muted);margin:18px 0 0}
+.wrap{max-width:1260px;margin:0 auto;padding:0 40px}.skip{position:absolute;top:-100px;left:20px;padding:12px 20px;background:white;z-index:30}.skip:focus{top:8px}.site-header{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(14px) saturate(160%);-webkit-backdrop-filter:blur(14px) saturate(160%)}.header-row{height:56px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;min-height:44px;text-decoration:none;color:var(--ink);font:23px Georgia,serif}.brand img{width:32px;height:32px;object-fit:contain}.nav{display:flex;gap:28px;align-items:center}.nav a{font-size:14px;font-weight:300;color:var(--ink);display:inline-flex;align-items:center;min-height:44px;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.nav a:hover{text-decoration:underline}
+.hero-copy>p{max-width:480px;font-size:18px;color:var(--muted)}.button{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 26px;background:linear-gradient(155deg,#D9B36C 0%,#B08D45 32%,#96773A 62%,#7a5f2e 100%);color:#fff;text-shadow:0 1px 3px rgba(45,34,12,.6);text-decoration:none;font-weight:700;border:1px solid #6b5327;border-radius:6px;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 8px 20px -10px rgba(58,44,16,.55)}.button:hover{background:linear-gradient(155deg,#E0BE7E 0%,#B99754 32%,#96773A 62%,#7a5f2e 100%);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 10px 24px -10px rgba(58,44,16,.65)}.button span.brillo{position:absolute;inset:0;overflow:hidden;pointer-events:none}.button span.brillo::before{content:'';position:absolute;top:-60%;left:-35%;width:28%;height:220%;background:linear-gradient(75deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.85) 50%,rgba(255,255,255,0) 100%);animation:brilloBoton 3.4s ease-in-out infinite}@keyframes brilloBoton{0%{left:-35%}45%{left:135%}100%{left:135%}}@media(prefers-reduced-motion:reduce){.button span.brillo::before{animation:none;display:none}}.download-note{display:block;margin-top:10px;color:var(--muted)}.callout{position:relative;overflow:hidden;background:var(--tint);border-top:3px solid var(--gold);padding:26px 30px}.callout>*{position:relative;z-index:1}.callout::before{content:'';position:absolute;right:-30px;bottom:-30px;width:220px;height:220px;background:url('./assets/sello-marca-agua.png') center/contain no-repeat;opacity:.07;pointer-events:none;z-index:0}.callout-wide{margin-top:36px}.callout-row{margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}.callout-row>div{padding:4px 26px;border-left:1px solid #805461}.callout-row>div:first-child{padding-left:0;border-left:0}.callout dt{font-size:14px;color:var(--muted);margin-bottom:4px}.callout dd{margin:0;font-size:21px;line-height:1.35}.callout .delivery-link{font-size:16px}.deadline-note{font-size:14px;color:var(--muted);margin:18px 0 0}
 .section{padding:54px 0;border-top:1px solid var(--line)}.section-grid{display:grid;grid-template-columns:.8fr 1.6fr;gap:80px}.section-intro p{color:var(--muted);max-width:290px}.steps{padding-left:24px;margin:0}.steps li{padding:0 0 20px 10px}.steps li:last-child{padding-bottom:0}.steps strong{display:block}.steps p{margin:4px 0 0;color:var(--muted)}.requirements{margin:0;padding-left:24px}.requirements li{padding:12px 0 12px 34px;border-bottom:1px solid var(--line);position:relative}.requirements li:first-child{padding-top:0}.requirements li::before{content:'';position:absolute;left:5px;top:19px;width:14px;height:14px;border:1.5px solid var(--muted)}.requirements li:first-child::before{top:7px}.requirements li::marker{color:var(--muted);font-size:14px}.requirements a{display:inline-flex;align-items:center;min-height:44px}.delivery{margin-top:30px}address{font-style:normal}.delivery p{margin:10px 0}.note{color:var(--muted);font-size:14px}.source{font-size:14px;margin:18px 0 0}.source a{display:inline-flex;align-items:center;min-height:44px}.fee{font:36px Georgia,serif;margin-bottom:20px}
 .faq details{border-top:1px solid var(--line)}.faq details:last-of-type{border-bottom:1px solid var(--line)}summary{cursor:pointer;min-height:60px;padding:17px 32px 17px 0;font-weight:700;position:relative;list-style:none}summary::-webkit-details-marker{display:none}summary::after{content:'+';position:absolute;right:4px;font-size:22px;top:11px;font-weight:400}details[open] summary::after{content:'−'}.faq details p{padding-right:25px;margin-bottom:22px;color:var(--muted)}.contact-section{background:var(--tint)}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact-layout a{display:inline-flex;align-items:center;min-height:44px}.contact-layout address{margin-bottom:8px}.contact-layout p{margin-bottom:12px}.closing{padding-top:24px;border-top:1px solid var(--line);margin-top:24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}.closing a{display:inline-flex;min-height:44px;align-items:center}.about p{max-width:780px}.site-footer{border-top:1px solid var(--line);padding:24px 0}.footer-row{display:flex;justify-content:space-between;gap:30px;align-items:center}.footer-brand{display:flex;align-items:center;gap:12px;font-size:14px}.footer-links{display:flex;flex-wrap:wrap;gap:24px}.footer-links a{font-size:14px;min-height:44px;display:inline-flex;align-items:center}.site-footer small{font-size:13px;color:var(--muted)}
 @media(max-width:1100px){.hero-grid,.section-grid{gap:44px}.nav{gap:22px}}
@@ -201,18 +201,144 @@
 :root{--silver:#D2D3D5;--silver-ink:#5D626B}
 .hero h1{font-size:clamp(34px,3.55vw,50px);line-height:1.13;letter-spacing:-1.2px;margin-bottom:24px}
 .hero .hero-exam{font-size:28px;line-height:1.25;color:var(--gold);margin-bottom:12px;letter-spacing:0}
-.hero-copy .edition{font-size:16px;letter-spacing:.035em;color:var(--silver-ink);margin-bottom:20px}
+.hero-caption .edition{font-size:22px;letter-spacing:.035em;color:#fff;margin:0 0 6px}
 .hero-copy>p,.download-note,.section-intro p,.steps p,.faq details p{color:var(--silver-ink)}
-.brand img{width:56px;height:56px;object-fit:contain}
 .callout dt,.callout .deadline-note,.contact-section .section-intro p,.contact-section .note,.site-footer small{color:var(--silver)}
 .callout dd:not(.delivery-link),.contact-section h2,.contact-section h3{color:var(--accent)}
 .footer-brand{max-width:540px;font:18px/1.4 Georgia,serif;color:var(--accent)}
 .footer-brand img{width:72px;height:72px;object-fit:contain;flex-shrink:0}
 .footer-brand small{font:13px/1.6 Arial,sans-serif}
-@media(max-width:760px){.hero h1{font-size:32px;letter-spacing:-.7px}.hero .hero-exam{font-size:25px}.brand img{width:44px;height:44px}.footer-brand{font-size:17px}}
+@media(max-width:760px){.hero h1{font-size:32px;letter-spacing:-.7px}.hero .hero-exam{font-size:25px}.footer-brand{font-size:17px}}
 @media print{.hero h1{font-size:24pt}.hero .hero-exam{font-size:16pt}.callout dt,.callout .deadline-note,.callout dd:not(.delivery-link),.contact-section h2,.contact-section h3,.contact-section .section-intro p,.contact-section .note,.footer-brand,.site-footer small{color:black}}
-.contact-section{position:relative;overflow:hidden}.contact-section .wrap>*{position:relative;z-index:1}.contact-section::before{content:'';position:absolute;left:-50px;top:-50px;width:280px;height:280px;background:url('./assets/sello-comgecey.svg') center/contain no-repeat;opacity:.06;pointer-events:none;z-index:0}
+.contact-section{position:relative;overflow:hidden}.contact-section .wrap>*{position:relative;z-index:1}.contact-section::before{content:'';position:absolute;right:-60px;top:-60px;width:400px;height:400px;background:url('./assets/sello-marca-agua.png') center/contain no-repeat;opacity:.08;pointer-events:none;z-index:0}
 .whatsapp-info{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:var(--green);font-weight:700}.whatsapp-info svg{flex-shrink:0}.callout .deadline-note{font-size:19px;line-height:1.4;margin-top:24px;padding-top:20px;border-top:1px solid #805461}.deadline-note span{display:block;color:var(--silver)}.deadline-note strong{display:block;font-size:27px;color:var(--accent);font-weight:400;font-family:Georgia,serif;margin-top:8px}@media(max-width:760px){.callout .deadline-note{font-size:18px}.deadline-note strong{font-size:25px}}@media print{.deadline-note span,.deadline-note strong{color:black}}
+/* Hero a pantalla completa: aspect-ratio real del video (16:9) para que object-fit:cover no recorte de más. Texto a la derecha con velo horizontal que se disipa hacia la izquierda. */
+.hero{position:relative;overflow:hidden;aspect-ratio:16/9;max-height:800px;min-height:560px;margin-top:-56px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate;padding:88px 0 40px}
+.hero-media{position:absolute;inset:0;z-index:0;aspect-ratio:auto}
+.hero-media video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(45,10,19,0) 0%,rgba(45,10,19,.32) 38%,rgba(45,10,19,.82) 66%,rgba(45,10,19,.94) 100%)}
+.hero-copy{align-self:flex-end;position:relative;z-index:1;margin:0;padding:0 40px;max-width:600px;text-align:right}
+.hero-copy h1{color:var(--navy-ink)}
+.hero-copy .hero-exam{color:var(--accent)}
+.hero-caption .edition{color:#fff}
+.hero-copy>p{color:var(--navy-ink-soft)!important}
+.hero-caption{align-self:flex-start;position:relative;z-index:1;max-width:380px;margin:0 0 0 40px;text-align:left;font-size:16px;font-weight:400;line-height:1.5;color:#fff}
+.hero-caption-texto{font-weight:300;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.callout-band .wrap{padding-top:0}
+.callout-wide{margin:0;padding:0}
+.convocatoria-imagen-wrap{position:relative;container-type:inline-size}
+.convocatoria-imagen{width:100%;height:auto;display:block}
+.countdown-hueco{position:absolute;left:43.4%;right:43.5%;top:13.3%;bottom:54.8%;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center}
+.countdown-date{margin:0;font-size:1.9cqi;color:#ded2d5;padding-bottom:1.1cqi;border-bottom:1px solid #805461}
+.countdown-num{margin:0;font-family:Georgia,serif;font-weight:400;font-size:9.6cqi;line-height:.85;color:var(--accent);text-shadow:0 0 18px rgba(240,210,138,.45)}
+.countdown-label{margin:0;font-family:Georgia,serif;font-weight:400;font-size:3.3cqi;line-height:1;color:var(--accent)}
+.convocatoria-valor{position:absolute;top:79.1%;bottom:14.4%;display:flex;align-items:center;justify-content:center;margin:0;font-family:Georgia,serif;font-weight:400;font-size:3.6cqi;line-height:1;color:var(--accent);text-align:center;text-decoration:none;white-space:nowrap}
+.convocatoria-valor-cierre{left:6.5%;right:77.7%}
+.convocatoria-valor-examen{left:29.9%;right:54.5%}
+.convocatoria-valor-cuota{left:53.5%;right:29.4%}
+.convocatoria-valor-entrega{left:80.6%;right:9.6%}
+.convocatoria-movil{display:none}
+.callout-row{grid-template-columns:repeat(4,1fr);gap:0;text-align:center;padding-top:32px;border-top:1px solid #805461}
+.callout-row>div{padding:0 20px;border-left:1px solid #805461;border-top:0}
+.callout-row>div:first-child{border-left:0;padding-left:0}
+.callout-icon{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;border:1.5px solid var(--accent);border-radius:50%;color:var(--accent);margin-bottom:14px}
+.callout-icon svg{width:24px;height:24px}
+.callout-row dt{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.callout-row dd{font-size:19px}
+.countdown{position:relative;width:200px;height:200px;margin:0 auto 36px;container-type:inline-size}
+.countdown-ring-svg{width:100%;height:100%;display:block}
+.countdown-text-movil{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px}
+.countdown-text-movil .countdown-date{font-size:12.5px;padding-bottom:8px;margin-bottom:2px}
+.countdown-num-movil{font-family:Georgia,serif;font-weight:400;font-size:60px;line-height:1;color:var(--accent);text-shadow:0 0 18px rgba(240,210,138,.45)}
+.countdown-label-movil{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-ink-soft);line-height:1.3}
+@media(max-width:760px){
+.callout-wide{padding:32px 22px}
+.convocatoria-imagen-wrap{display:none}
+.convocatoria-movil{display:block}
+.countdown{width:170px;height:170px}
+.callout-row{grid-template-columns:1fr 1fr;gap:24px 0;row-gap:24px}
+.callout-row>div:nth-child(3){border-left:0}
+.callout-row>div:last-child{grid-column:1/-1;border-left:0;border-top:1px solid #805461;padding-top:20px}
+}
+@media print{.countdown-ring-svg,.callout-icon{display:none}}
+@media(max-width:760px){
+.hero{aspect-ratio:auto;min-height:auto;max-height:none;margin-top:0;display:block;background:var(--tint)}
+.hero-media{display:none}
+.hero-copy{padding:28px 20px 30px;max-width:none}
+.hero-copy h1{color:var(--ink)}
+.hero-caption .edition{color:var(--muted)}
+.hero-copy>p{color:var(--muted)!important}
+.hero-caption{position:static;max-width:none;margin:16px 0 0;padding:0 20px;font-size:15px;color:var(--muted)}
+.callout-wide{padding:18px 22px}
+}
+@media print{
+.hero{aspect-ratio:auto;min-height:auto;max-height:none;margin-top:0;display:block;background:white}
+.hero-veil{display:none}
+.hero-copy{padding:0;max-width:none}
+.hero-copy h1{color:black}
+.hero-copy .edition,.hero-copy>p{color:black!important}
+}
+/* Restaurado: se había perdido al reescribir el bloque del hero. */
+.site-footer{position:relative;overflow:hidden}
+.site-footer .wrap{position:relative;z-index:1}
+.detalle-banda{position:absolute;top:0;left:0;width:100%;height:auto;max-height:130px;object-fit:cover;object-position:top;opacity:.14;pointer-events:none;z-index:0}
+@media(max-width:760px){.detalle-banda{max-height:80px}}
+@media print{.detalle-esquina,.detalle-banda{display:none}}
+/* Pasos visuales de "Cómo presentar el examen", reconstruidos del estilo de referencia con texto real. */
+.section-intro-full{max-width:640px;margin-bottom:44px}
+.steps-visual{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:44px;text-align:left}
+.steps-visual li{position:relative}
+.steps-visual li.con-flecha::before{content:'';position:absolute;top:40px;left:-42px;width:56px;height:14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 16'%3E%3Cline x1='2' y1='8' x2='52' y2='8' stroke='%23d8c6ca' stroke-width='1.6' stroke-dasharray='3 4'/%3E%3Ccircle cx='28' cy='8' r='2.5' fill='%23d8c6ca'/%3E%3Cpath d='M50 3l8 5-8 5' fill='none' stroke='%23d8c6ca' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/contain}
+.step-icon-wrap{position:relative;width:96px;height:96px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+.step-num{position:absolute;top:-4px;left:-4px;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--navy-ink);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:15px;box-shadow:0 2px 6px rgba(58,14,25,.25)}
+.step-icon svg{width:42px;height:42px;color:var(--navy)}
+.steps-visual h3{font-family:Georgia,serif;font-weight:400;font-size:21px;color:var(--ink);margin-bottom:10px}
+.step-chip{display:inline-flex;align-items:center;gap:7px;font-size:14px;color:var(--muted);margin-bottom:10px}
+.step-chip svg{width:16px;height:16px;flex-shrink:0}
+.steps-visual p{color:var(--muted);margin:0;font-size:15.5px}
+@media(max-width:760px){
+.steps-visual{grid-template-columns:1fr;gap:32px}
+.steps-visual li.con-flecha::before{display:none}
+}
+@media print{.steps-visual li.con-flecha::before{display:none}.step-icon-wrap{background:white;border:1px solid #999}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.examen-imagen{width:100%;height:auto;display:block;border-radius:8px}
+.examen-movil{display:none}
+@media(max-width:760px){
+.examen-imagen{display:none}
+.examen-movil{display:block}
+.examen-movil-titulo{font-family:Georgia,serif;font-weight:400;font-size:30px;line-height:1.15;color:var(--ink);margin:0 0 12px}
+.examen-movil-intro{color:var(--muted);margin:0 0 32px}
+}
+.requisitos-imagen-wrap{position:relative;container-type:inline-size}
+.requisitos-imagen{width:100%;height:auto;display:block;border-radius:8px}
+.requisitos-fecha{position:absolute;left:75.5%;top:89.2%;font-family:Georgia,serif;font-size:1.55cqi;line-height:1;color:var(--muted)}
+.requisitos-zona{position:absolute;display:block;font-size:0;color:transparent;border-radius:6px;transition:background-color .15s ease}
+.requisitos-zona:hover,.requisitos-zona:focus-visible{background-color:rgba(176,141,69,.14)}
+.requisitos-zona-solicitud{left:61.6%;top:45.6%;width:28%;height:12.2%}
+.requisitos-zona-mapa{left:30.4%;top:80.7%;width:29.4%;height:14.4%}
+.requisitos-acciones{margin:20px 0 0;font-size:15px}
+.requisitos-acciones a{margin:0 6px}
+.requisitos-acciones a:first-child{margin-left:0}
+.requisitos-movil{display:none}
+@media(max-width:760px){
+.requisitos-imagen-wrap{display:none}
+.requisitos-acciones{display:none}
+.requisitos-movil{display:block}
+}
+@media print{.requisitos-fecha{position:static;display:block;font-size:11pt;color:black}}
+.pago-imagen-wrap{position:relative;container-type:inline-size}
+.pago-imagen{width:100%;height:auto;display:block;border-radius:8px}
+.pago-monto{position:absolute;left:3.6%;top:57.5%;margin:0;font-family:Georgia,serif;font-weight:400;font-size:4cqi;line-height:1;color:var(--navy)}
+.pago-monto span{margin-left:.35em;font-size:.5em;color:var(--muted);letter-spacing:.03em}
+.pago-zona-whatsapp{position:absolute;left:79%;top:84.5%;width:18%;height:8%;display:block;font-size:0;color:transparent;border-radius:6px;transition:background-color .15s ease}
+.pago-zona-whatsapp:hover,.pago-zona-whatsapp:focus-visible{background-color:rgba(33,150,83,.14)}
+.pago-movil{display:none}
+@media(max-width:760px){
+.pago-imagen-wrap{display:none}
+.pago-movil{display:block}
+}
+@media print{.pago-monto{position:static;font-size:20pt;color:black}}
 </style>
 </head>
 <body>
@@ -225,46 +351,133 @@
 </header>
 <main id="contenido" tabindex="-1">
   <section class="hero" id="inicio" aria-labelledby="titulo">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1 id="titulo">Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C.</h1><h2 class="hero-exam">Examen Nacional de Certificación en Medicina General</h2><p class="edition">Convocatoria 2026</p>
-          <p>Para médicos generales con cédula profesional que ejercen en una institución pública o privada.</p>
-          <a class="button" href="./solicitud-certificacion.pdf" download>Descargar la solicitud</a>
-          <small class="download-note">Solicitud oficial · PDF de 2 páginas</small>
-        </div>
-        <div class="hero-media" aria-hidden="true">
-          <video autoplay muted loop playsinline poster="./assets/hero-poster.jpg">
-            <source src="./assets/video-hero.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <aside class="callout callout-wide" aria-label="Fechas y cuota de la convocatoria">
-        <dl class="callout-row">
-          <div><dt>Cierre de registro y documentos</dt><dd><time datetime="2026-09-30">30 de septiembre de 2026</time></dd></div>
-          <div><dt>Examen en línea</dt><dd><time datetime="2026-10-31">31 de octubre de 2026</time></dd></div>
-          <div><dt>Cuota del trámite</dt><dd>$4,500.00 MXN</dd></div>
-          <div><dt>Entrega de documentos</dt><dd class="delivery-link">Recepción de documentos en Mérida.<br><a href="#requisitos">Ver dirección y requisitos</a></dd></div>
-        </dl>
-        <!-- Actualizar manualmente al publicar: referencia fechada para evitar un contador desactualizado sin contexto. -->
-        <p class="deadline-note"><span>Al <time datetime="2026-09-11">11 de septiembre de 2026</time></span><strong>Faltan 19 días para el cierre</strong></p>
-      </aside>
+    <div class="hero-media" aria-hidden="true">
+      <video autoplay muted loop playsinline poster="./assets/hero-poster.jpg">
+        <source src="./assets/video-hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-veil"></div>
+    </div>
+    <div class="wrap hero-copy">
+      <h1 id="titulo">Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C.</h1><h2 class="hero-exam">Examen Nacional de Certificación en Medicina General</h2>
+      <a class="button" href="./solicitud-certificacion.pdf" download><span class="brillo" aria-hidden="true"></span>Descargar la solicitud</a>
+    </div>
+    <div class="hero-caption">
+      <p class="edition">Convocatoria 2026</p>
+      <p class="hero-caption-texto">Para médicos generales con cédula profesional que ejercen en una institución pública o privada.</p>
     </div>
   </section>
+  <section class="callout-band">
+    <aside class="callout callout-wide" aria-label="Fechas y cuota de la convocatoria">
+      <div class="convocatoria-imagen-wrap">
+        <img class="convocatoria-imagen" src="./assets/dias-restantes.webp" width="1672" height="941" loading="lazy" alt="Convocatoria 2026. Cierre de registro y documentos, 30 de septiembre de 2026. Examen en línea, 31 de octubre de 2026. Cuota del trámite, $4,500.00 MXN. Entrega de documentos, recepción en Mérida.">
+        <div class="countdown-hueco" role="img" aria-label="Quedan 18 días para el cierre de registro, al 12 de septiembre de 2026">
+          <p class="countdown-date"><time datetime="2026-09-12">12.09.26</time></p>
+          <p class="countdown-num">18</p>
+          <p class="countdown-label">días</p>
+        </div>
+        <time class="convocatoria-valor convocatoria-valor-cierre" datetime="2026-09-30">30 sep 2026</time>
+        <time class="convocatoria-valor convocatoria-valor-examen" datetime="2026-10-31">31 oct 2026</time>
+        <p class="convocatoria-valor convocatoria-valor-cuota">$4,500 MXN</p>
+        <p class="convocatoria-valor convocatoria-valor-entrega">Mérida</p>
+      </div>
+      <div class="wrap">
+        <div class="convocatoria-movil">
+          <div class="countdown" role="img" aria-label="Quedan 18 días para el cierre de registro, al 12 de septiembre de 2026">
+            <svg viewBox="0 0 240 240" class="countdown-ring-svg" aria-hidden="true">
+              <defs>
+                <radialGradient id="fondoAnillo" cx="50%" cy="42%" r="65%">
+                  <stop offset="0%" stop-color="#5a1826"/>
+                  <stop offset="100%" stop-color="#3a0e19"/>
+                </radialGradient>
+                <linearGradient id="anilloOro" x1="15%" y1="0%" x2="85%" y2="100%">
+                  <stop offset="0%" stop-color="#F7E7B8"/>
+                  <stop offset="30%" stop-color="#D9B36C"/>
+                  <stop offset="60%" stop-color="#B08D45"/>
+                  <stop offset="100%" stop-color="#7A5F2E"/>
+                </linearGradient>
+                <linearGradient id="brilloEspecular" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#FFF6DD" stop-opacity="0"/>
+                  <stop offset="45%" stop-color="#FFF6DD" stop-opacity=".85"/>
+                  <stop offset="100%" stop-color="#FFF6DD" stop-opacity="0"/>
+                </linearGradient>
+                <filter id="brilloOro" x="-60%" y="-60%" width="220%" height="220%">
+                  <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#F0D28A" flood-opacity=".7"/>
+                </filter>
+              </defs>
+              <circle cx="120" cy="120" r="108" fill="url(#fondoAnillo)"/>
+              <circle cx="120" cy="120" r="100" fill="none" stroke="#2d0a13" stroke-width="20"/>
+              <circle cx="120" cy="120" r="100" fill="none" stroke="url(#anilloOro)" stroke-width="20" stroke-linecap="round" filter="url(#brilloOro)" stroke-dasharray="628.32" stroke-dashoffset="230.38" transform="rotate(-90 120 120)"/>
+              <circle cx="120" cy="120" r="100" fill="none" stroke="url(#brilloEspecular)" stroke-width="5" stroke-linecap="round" stroke-dasharray="628.32" stroke-dashoffset="230.38" transform="rotate(-135 120 120)"/>
+            </svg>
+            <div class="countdown-text-movil">
+              <span class="countdown-date"><time datetime="2026-09-12">12.09.26</time></span>
+              <strong class="countdown-num-movil">18</strong>
+              <span class="countdown-label-movil">días para<br>el cierre</span>
+            </div>
+          </div>
+          <dl class="callout-row">
+            <div>
+              <span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><circle cx="8" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="14" r="1" fill="currentColor" stroke="none"/></svg></span>
+              <dt>Cierre de registro y documentos</dt><dd><time datetime="2026-09-30">30 de septiembre de 2026</time></dd>
+            </div>
+            <div>
+              <span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="4.5" width="17" height="12" rx="1.5"/><path d="M2 19.5h20M9 9l2 2 4-4"/></svg></span>
+              <dt>Examen en línea</dt><dd><time datetime="2026-10-31">31 de octubre de 2026</time></dd>
+            </div>
+            <div>
+              <span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="17" rx="7" ry="2.5"/><ellipse cx="12" cy="13" rx="7" ry="2.5"/><ellipse cx="12" cy="9" rx="7" ry="2.5"/></svg></span>
+              <dt>Cuota del trámite</dt><dd>$4,500.00 MXN</dd>
+            </div>
+            <div>
+              <span class="callout-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3.5h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Z"/><path d="M14 3.5v4h4"/><circle cx="15.5" cy="15.5" r="2.7"/><path d="M15.5 21v-3"/></svg></span>
+              <dt>Entrega de documentos</dt><dd class="delivery-link">Recepción en Mérida.<br><a href="#requisitos">Ver dirección y requisitos</a></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </aside>
+  </section>
   <section id="examen" class="section">
-    <div class="wrap section-grid">
-      <div class="section-intro"><h2>Cómo presentar<br>el examen</h2><p>Consulte la solicitud y prepare la documentación necesaria para su trámite.</p></div>
-      <ol class="steps">
-        <li><strong>Hasta el 30 de septiembre: entregue sus documentos</strong><p>Complete la solicitud, reúna los requisitos y consulte las instrucciones para cubrir la cuota. Le invitamos a entregar su expediente en el domicilio indicado.</p></li>
-        <li><strong>Antes del examen: revise las instrucciones de acceso</strong><p>Solicite la guía de preparación al completar su solicitud. Se le indicará el horario una vez validada su documentación.</p></li>
-        <li><strong>31 de octubre: presente el examen en línea</strong><p>Debe aprobar la evaluación para obtener la certificación. La convocatoria pública no especifica una fecha de entrega de resultados.</p></li>
-      </ol>
+    <div class="wrap">
+      <h2 class="sr-only">Cómo presentar el examen</h2>
+      <img class="examen-imagen" src="./assets/como-presentar-el-examen.webp" width="1672" height="941" loading="lazy" alt="Cómo presentar el examen. Consulte la solicitud y prepare la documentación necesaria para su trámite. Paso 1, entregue sus documentos, antes del cierre de registro. Paso 2, revise el acceso, una vez validada su documentación. Paso 3, presente el examen en línea, según la convocatoria vigente.">
+      <div class="examen-movil" aria-hidden="false">
+        <p class="examen-movil-titulo">Cómo presentar el examen</p>
+        <p class="examen-movil-intro">Consulte la solicitud y prepare la documentación necesaria para su trámite.</p>
+        <ol class="steps-visual">
+          <li>
+            <div class="step-icon-wrap"><span class="step-num">1</span><span class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3.5h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Z"/><path d="M14 3.5v4h4"/><path d="M8.5 14l2 2 4-4.5"/></svg></span></div>
+            <h3>Entregue sus documentos</h3>
+            <span class="step-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3.5h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Z"/><path d="M14 3.5v4h4"/></svg>Antes del cierre de registro.</span>
+          </li>
+          <li class="con-flecha">
+            <div class="step-icon-wrap"><span class="step-num">2</span><span class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3.5 2.5-5.5 6-5.5s6 2 6 5.5"/><circle cx="17.5" cy="9" r="2.3"/><path d="M15.3 19c.2-2.6 1.8-4.3 4.2-4.3"/></svg></span></div>
+            <h3>Revise el acceso</h3>
+            <span class="step-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3.5h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Z"/><path d="M14 3.5v4h4"/></svg>Una vez validada su documentación.</span>
+          </li>
+          <li class="con-flecha">
+            <div class="step-icon-wrap"><span class="step-num">3</span><span class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="4.5" width="17" height="12" rx="1.5"/><path d="M2 19.5h20M9 9l2 2 4-4"/></svg></span></div>
+            <h3>Presente el examen en línea</h3>
+            <span class="step-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3.5h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Z"/><path d="M14 3.5v4h4"/></svg>Según la convocatoria vigente.</span>
+          </li>
+        </ol>
+      </div>
     </div>
   </section>
   <section id="requisitos" class="section">
-    <div class="wrap section-grid">
-      <div class="section-intro"><h2>Prepare su<br>documentación</h2><p>Esta lista le permite revisar su expediente antes de entregarlo. Puede imprimirla para su consulta.</p></div>
-      <div>
+    <div class="wrap">
+      <h2 class="sr-only">Prepare su documentación</h2>
+      <div class="requisitos-imagen-wrap">
+        <img class="requisitos-imagen" src="./assets/prepare-su-documentacion.webp" width="1672" height="941" loading="lazy" alt="Prepare su documentación. Revise su expediente antes de entregarlo. 1. Título de médico cirujano. 2. Cédula profesional. 3. Identificación oficial. 4. CURP. 5. Comprobante de ejercicio profesional. 6. Solicitud oficial firmada. 7. Fotografías, dos tamaño diploma. 8. Comprobante de pago. Entrega en Mérida, Yucatán: Calle 88B #506 x 90A, Fracc. Itzáes, CP 97068. Fecha límite: 30 de septiembre de 2026.">
+        <!-- Actualizar manualmente al publicar: única fecha superpuesta a la imagen, para que no quede fija en el arte. -->
+        <time class="requisitos-fecha" datetime="2026-09-30">30 de septiembre de 2026</time>
+        <a class="requisitos-zona requisitos-zona-solicitud" href="./solicitud-certificacion.pdf" download>Descargar la solicitud</a>
+        <a class="requisitos-zona requisitos-zona-mapa" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Ver dirección en Google Maps</a>
+      </div>
+      <p class="requisitos-acciones"><a href="https://www.consejonacionalcmg.org.mx/certificado-primera-vez">Consultar la convocatoria nacional</a></p>
+      <div class="requisitos-movil">
+        <p class="examen-movil-titulo">Prepare su documentación</p>
+        <p class="examen-movil-intro">Esta lista le permite revisar su expediente antes de entregarlo. Puede imprimirla para su consulta.</p>
         <ol class="requirements">
           <li>Copia del título de médico cirujano, de una institución reconocida por la SEP.</li>
           <li>Copia de la cédula profesional expedida por la SEP.</li>
@@ -281,20 +494,25 @@
           <p>Fecha límite: <time datetime="2026-09-30">30 de septiembre de 2026</time>.</p>
           <!-- PENDIENTE CLIENTE: confirmar días y horas de recepción de documentos. -->
 
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Consultar dirección en Google Maps ↗</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Consultar dirección en Google Maps</a>
         </div>
-        <p class="source"><a href="https://www.consejonacionalcmg.org.mx/certificado-primera-vez">Consultar la convocatoria nacional ↗</a></p>
+        <p class="source"><a href="https://www.consejonacionalcmg.org.mx/certificado-primera-vez">Consultar la convocatoria nacional</a></p>
       </div>
     </div>
   </section>
   <section id="pago" class="section">
-    <div class="wrap section-grid">
-      <div class="section-intro"><h2>Cuota y forma<br>de pago</h2></div>
-      <div>
+    <div class="wrap">
+      <h2 class="sr-only">Cuota y forma de pago</h2>
+      <div class="pago-imagen-wrap">
+        <img class="pago-imagen" src="./assets/cuota-y-forma-de-pago.webp" width="1672" height="941" loading="lazy" alt="Cuota y forma de pago. Consulte el monto, el medio de pago y las indicaciones antes de depositar. Cuota: $4,500.00 MXN. Depósito bancario. Solicite los datos por WhatsApp o correo. Conserve su comprobante de pago. Importante: una vez realizado el pago no hay devoluciones, incluso si no obtiene la certificación.">
+        <p class="pago-monto">$4,500.00<span>MXN</span></p>
+        <a class="pago-zona-whatsapp" href="https://wa.me/529999977170">Información por WhatsApp</a>
+      </div>
+      <div class="pago-movil">
+        <p class="examen-movil-titulo">Cuota y forma de pago</p>
         <p class="fee">$4,500.00 MXN</p>
         <p>La cuota se cubre por depósito bancario en la cuenta del Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C. Solicite los datos por WhatsApp o correo antes de depositar.</p>
         <!-- PENDIENTE CLIENTE: confirmar canal de entrega del comprobante, referencia requerida y cómo se acredita el pago. -->
-
         <p><strong>Una vez realizado el pago no hay devoluciones, incluso si no obtiene la certificación.</strong> Es una condición de la convocatoria y de la solicitud oficial.</p>
         <a class="whatsapp-info" href="https://wa.me/529999977170" aria-label="Información por WhatsApp"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.85 11.85 0 0 0 12.07 0C5.49 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L.04 24l6.25-1.64a11.9 11.9 0 0 0 5.77 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.18-3.48-8.42ZM12.07 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.71.97.99-3.62-.24-.37a9.88 9.88 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.9-9.92 9.9Zm5.43-7.41c-.3-.15-1.77-.88-2.04-.98-.28-.1-.48-.15-.68.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.53.07-.8.37-.28.3-1.05 1.03-1.05 2.5 0 1.48 1.08 2.91 1.23 3.11.15.2 2.11 3.22 5.12 4.51.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.57-.09 1.77-.72 2.02-1.43.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"/></svg><span>Información</span></a>
       </div>
@@ -313,7 +531,7 @@
         <details><summary>¿Cuánto tiempo tiene vigencia el certificado?</summary><p>Tiene una vigencia de cinco años. La renovación debe tramitarse antes de su vencimiento, por evaluación curricular o aprobando nuevamente el examen.</p></details>
         <details><summary>¿Cuántos puntos necesito para renovar por currículum?</summary><p>El mínimo publicado es de 300 puntos/horas: 150 de educación médica continua y 150 de actividades asistenciales. Presente las constancias del periodo evaluado y los demás documentos de la convocatoria de renovación.</p></details>
         <details><summary>¿Qué ocurre si mi currículum no alcanza los puntos?</summary><p>El Consejo Nacional de Certificación en Medicina General, A.C. indica que se le convocará a presentar el examen en las fechas de la convocatoria vigente. La constancia de renovación se expide una vez acreditado el proceso de evaluación.</p></details>
-        <p class="source"><a href="https://www.consejonacionalcmg.org.mx/certificado-primera-vez">Certificación de primera vez ↗</a><br><a href="https://www.consejonacionalcmg.org.mx/certificado-renovacion">Renovación del certificado ↗</a><br><a href="./solicitud-certificacion.pdf">Solicitud oficial y condiciones ↗</a></p>
+        <p class="source"><a href="https://www.consejonacionalcmg.org.mx/certificado-primera-vez">Certificación de primera vez</a><br><a href="https://www.consejonacionalcmg.org.mx/certificado-renovacion">Renovación del certificado</a><br><a href="./solicitud-certificacion.pdf">Solicitud oficial y condiciones</a></p>
       </div>
     </div>
   </section>
@@ -322,7 +540,7 @@
       <h2>Nuestra institución</h2>
       <div>
         <p>La institución forma parte del Consejo Nacional de Certificación en Medicina General, A.C., integrado por representantes de 32 consejos estatales. Trabaja bajo los lineamientos del Comité Normativo Nacional de Medicina General, A.C., cuyo reconocimiento de idoneidad ante la Secretaría de Educación Pública está documentado por la instancia nacional.</p>
-        <p class="source"><a href="https://consejonacionalcmg.org.mx/micrositio/Yucat%C3%A1n">Consultar el directorio institucional ↗</a><br><a href="https://www.consejonacionalcmg.org.mx/certificado-idoneidad">Consultar el reconocimiento de idoneidad ↗</a></p>
+        <p class="source"><a href="https://consejonacionalcmg.org.mx/micrositio/Yucat%C3%A1n">Consultar el directorio institucional</a><br><a href="https://www.consejonacionalcmg.org.mx/certificado-idoneidad">Consultar el reconocimiento de idoneidad</a></p>
       </div>
     </div>
   </section>
@@ -331,15 +549,16 @@
       <div class="section-intro"><h2>Contacto</h2><p>Para consultas sobre su expediente y la entrega de documentos.</p></div>
       <div>
         <div class="contact-layout">
-          <div><h3>Recepción de documentos</h3><address>Calle 88B #506 x 90A, Fracc. Itzáes, CP 97068, Mérida, Yucatán.</address><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Ver dirección en Google Maps ↗</a></div>
+          <div><h3>Recepción de documentos</h3><address>Calle 88B #506 x 90A, Fracc. Itzáes, CP 97068, Mérida, Yucatán.</address><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Ver dirección en Google Maps</a></div>
           <div><h3>Atención institucional</h3><a href="https://wa.me/529999977170">WhatsApp: +52 999 997 7170</a><br><a href="mailto:comgecey@gmail.com">comgecey@gmail.com</a></div>
         </div>
-        <div class="closing"><a class="button" href="./solicitud-certificacion.pdf" download>Descargar la solicitud</a><a href="https://wa.me/529999977170">Escribir por WhatsApp ↗</a></div>
+        <div class="closing"><a class="button" href="./solicitud-certificacion.pdf" download><span class="brillo" aria-hidden="true"></span>Descargar la solicitud</a><a href="https://wa.me/529999977170">Escribir por WhatsApp</a></div>
       </div>
     </div>
   </section>
 </main>
 <footer class="site-footer">
+<img class="detalle-banda" src="./assets/detalle-1.png" alt="" aria-hidden="true" loading="lazy">
   <div class="wrap footer-row">
     <div class="footer-brand"><img src="./assets/sello-comgecey.svg" width="64" height="57" alt="Sello del Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C." loading="lazy"><div>Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C.<br><small>© 2026 · Mérida, Yucatán</small></div></div>
     <nav class="footer-links" aria-label="Enlaces del pie"><a href="#requisitos">Requisitos</a><a href="./solicitud-certificacion.pdf" download>Solicitud PDF</a><a href="mailto:comgecey@gmail.com">Correo</a><a href="https://www.facebook.com/100064251266606">Facebook</a></nav>
