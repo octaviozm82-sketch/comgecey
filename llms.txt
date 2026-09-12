@@ -1,12 +1,12 @@
-# COMGECEY
+# Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C.
 
-> Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C. Instancia estatal del Consejo Nacional de Certificación en Medicina General, bajo los lineamientos de CONAMEGE.
+> Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C. Instancia estatal del Consejo Nacional de Certificación en Medicina General, A.C., bajo los lineamientos del Comité Normativo Nacional de Medicina General, A.C.
 
 ## Convocatoria 2026 · Yucatán
 - Para médicos generales con cédula y comprobante de ejercicio profesional en institución pública o privada.
 - Examen teórico en línea: 31 de octubre de 2026.
 - Registro y entrega de documentos hasta el 30 de septiembre de 2026.
-- Cuota: $4,500.00 MXN por depósito bancario a la cuenta que proporcione COMGECEY. Sin devoluciones.
+- Cuota: $4,500.00 MXN por depósito bancario a la cuenta que proporcione la institución. Sin devoluciones.
 - Confirmación del pago: pendiente de confirmar con el cliente; no hay procedimiento publicado.
 - Certificado con vigencia de cinco años. Renovación por examen o currículum, según convocatoria nacional.
 
@@ -29,7 +29,7 @@
 
 ## Enlaces
 - [Inicio](https://comgecey.vercel.app/): convocatoria, requisitos, pago, preguntas y contacto.
-- [Solicitud oficial PDF](https://comgecey.vercel.app/solicitud-certificacion.pdf): copia del formato publicado por el Consejo Nacional.
+- [Solicitud oficial PDF](https://comgecey.vercel.app/solicitud-certificacion.pdf): copia del formato publicado por el Consejo Nacional de Certificación en Medicina General, A.C.
 - [Convocatoria nacional](https://www.consejonacionalcmg.org.mx/certificado-primera-vez).
 - [Renovación](https://www.consejonacionalcmg.org.mx/certificado-renovacion): mínimo curricular de 300 puntos/horas, 150 de educación médica continua y 150 de actividades asistenciales.
 - [Directorio estatal](https://consejonacionalcmg.org.mx/micrositio/Yucat%C3%A1n).
