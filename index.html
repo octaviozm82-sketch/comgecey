@@ -215,6 +215,7 @@
 /* Hero a pantalla completa: aspect-ratio real del video (16:9) para que object-fit:cover no recorte de más. Texto a la derecha con velo horizontal que se disipa hacia la izquierda. */
 .hero{position:relative;overflow:hidden;aspect-ratio:16/9;max-height:800px;min-height:560px;margin-top:-56px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate;padding:88px 0 40px}
 .hero-media{position:absolute;inset:0;z-index:0;aspect-ratio:auto}
+.hero-media .hero-video-movil{display:none}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
 .hero-veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(45,10,19,0) 0%,rgba(45,10,19,.32) 38%,rgba(45,10,19,.82) 66%,rgba(45,10,19,.94) 100%)}
 .hero-copy{align-self:flex-end;position:relative;z-index:1;margin:0;padding:0 40px;max-width:600px;text-align:right}
@@ -259,8 +260,10 @@
 .convocatoria-movil{display:block}
 }
 @media(max-width:760px){
-.hero{aspect-ratio:4/5;min-height:420px;max-height:640px;margin-top:-52px;padding:64px 0 0;display:flex;flex-direction:column;justify-content:flex-start;background:var(--navy)}
+.hero{aspect-ratio:9/16;min-height:600px;max-height:800px;margin-top:-52px;padding:64px 0 0;display:flex;flex-direction:column;justify-content:flex-start;background:var(--navy)}
 .hero-media{display:block}
+.hero-media .hero-video-desktop{display:none}
+.hero-media .hero-video-movil{display:block}
 .hero-veil{background:linear-gradient(to bottom,rgba(45,10,19,.9) 0%,rgba(45,10,19,.55) 38%,rgba(45,10,19,.05) 62%)}
 .hero-copy{align-self:flex-end;padding:0 20px;max-width:76%;text-align:right;max-height:50%;overflow:hidden}
 .hero-copy h1{color:var(--navy-ink);font-size:19px;line-height:1.2;letter-spacing:-.3px;margin-bottom:8px;max-width:none}
@@ -371,10 +374,11 @@
 <main id="contenido" tabindex="-1">
   <section class="hero" id="inicio" aria-labelledby="titulo">
     <div class="hero-media" aria-hidden="true">
-      <video autoplay muted loop playsinline poster="./assets/hero-poster.jpg">
-        <!-- PENDIENTE: video vertical del cliente. Al subirlo, reemplazar este nombre de archivo. -->
-        <source src="./assets/video-hero-vertical.mp4" type="video/mp4" media="(max-width:760px)">
+      <video class="hero-video-desktop" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="./assets/hero-poster.jpg">
         <source src="./assets/video-hero.mp4" type="video/mp4">
+      </video>
+      <video class="hero-video-movil" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="./assets/hero-poster.jpg">
+        <source src="./assets/video-hero-vertical.mp4" type="video/mp4">
       </video>
       <div class="hero-veil"></div>
     </div>
