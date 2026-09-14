@@ -395,8 +395,8 @@
     <aside class="callout callout-wide" aria-label="Fechas y cuota de la convocatoria">
       <div class="convocatoria-imagen-wrap">
         <img class="convocatoria-imagen" src="./assets/dias-restantes.webp" width="1672" height="941" loading="lazy" alt="Convocatoria 2026. Cierre de registro y documentos, 30 de septiembre de 2026. Examen en línea, 31 de octubre de 2026. Cuota del trámite, $4,500.00 MXN. Entrega de documentos, recepción en Mérida.">
-        <div class="countdown-hueco" role="img" aria-label="Quedan 16 días para el cierre de registro">
-          <p class="countdown-num">16</p>
+        <div class="countdown-hueco" id="dias-hueco-desktop" role="img" aria-label="Quedan 16 días para el cierre de registro">
+          <p class="countdown-num" id="dias-num-desktop">16</p>
           <p class="countdown-label">días</p>
         </div>
         <time class="convocatoria-valor convocatoria-valor-cierre" datetime="2026-09-30">30 sep 2026</time>
@@ -413,9 +413,9 @@
                 <span style="grid-column:5">ago.</span>
                 <span style="grid-column:10">sep.</span>
               </div>
-              <div class="dias-grid"><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-dorado"></i><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i></div>
+              <div class="dias-grid" id="dias-grid"><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i><i class="dia" data-date="2026-07-01"></i><i class="dia" data-date="2026-07-02"></i><i class="dia" data-date="2026-07-03"></i><i class="dia" data-date="2026-07-04"></i><i class="dia" data-date="2026-07-05"></i><i class="dia" data-date="2026-07-06"></i><i class="dia" data-date="2026-07-07"></i><i class="dia" data-date="2026-07-08"></i><i class="dia" data-date="2026-07-09"></i><i class="dia" data-date="2026-07-10"></i><i class="dia" data-date="2026-07-11"></i><i class="dia" data-date="2026-07-12"></i><i class="dia" data-date="2026-07-13"></i><i class="dia" data-date="2026-07-14"></i><i class="dia" data-date="2026-07-15"></i><i class="dia" data-date="2026-07-16"></i><i class="dia" data-date="2026-07-17"></i><i class="dia" data-date="2026-07-18"></i><i class="dia" data-date="2026-07-19"></i><i class="dia" data-date="2026-07-20"></i><i class="dia" data-date="2026-07-21"></i><i class="dia" data-date="2026-07-22"></i><i class="dia" data-date="2026-07-23"></i><i class="dia" data-date="2026-07-24"></i><i class="dia" data-date="2026-07-25"></i><i class="dia" data-date="2026-07-26"></i><i class="dia" data-date="2026-07-27"></i><i class="dia" data-date="2026-07-28"></i><i class="dia" data-date="2026-07-29"></i><i class="dia" data-date="2026-07-30"></i><i class="dia" data-date="2026-07-31"></i><i class="dia" data-date="2026-08-01"></i><i class="dia" data-date="2026-08-02"></i><i class="dia" data-date="2026-08-03"></i><i class="dia" data-date="2026-08-04"></i><i class="dia" data-date="2026-08-05"></i><i class="dia" data-date="2026-08-06"></i><i class="dia" data-date="2026-08-07"></i><i class="dia" data-date="2026-08-08"></i><i class="dia" data-date="2026-08-09"></i><i class="dia" data-date="2026-08-10"></i><i class="dia" data-date="2026-08-11"></i><i class="dia" data-date="2026-08-12"></i><i class="dia" data-date="2026-08-13"></i><i class="dia" data-date="2026-08-14"></i><i class="dia" data-date="2026-08-15"></i><i class="dia" data-date="2026-08-16"></i><i class="dia" data-date="2026-08-17"></i><i class="dia" data-date="2026-08-18"></i><i class="dia" data-date="2026-08-19"></i><i class="dia" data-date="2026-08-20"></i><i class="dia" data-date="2026-08-21"></i><i class="dia" data-date="2026-08-22"></i><i class="dia" data-date="2026-08-23"></i><i class="dia" data-date="2026-08-24"></i><i class="dia" data-date="2026-08-25"></i><i class="dia" data-date="2026-08-26"></i><i class="dia" data-date="2026-08-27"></i><i class="dia" data-date="2026-08-28"></i><i class="dia" data-date="2026-08-29"></i><i class="dia" data-date="2026-08-30"></i><i class="dia" data-date="2026-08-31"></i><i class="dia" data-date="2026-09-01"></i><i class="dia" data-date="2026-09-02"></i><i class="dia" data-date="2026-09-03"></i><i class="dia" data-date="2026-09-04"></i><i class="dia" data-date="2026-09-05"></i><i class="dia" data-date="2026-09-06"></i><i class="dia" data-date="2026-09-07"></i><i class="dia" data-date="2026-09-08"></i><i class="dia" data-date="2026-09-09"></i><i class="dia" data-date="2026-09-10"></i><i class="dia" data-date="2026-09-11"></i><i class="dia" data-date="2026-09-12"></i><i class="dia" data-date="2026-09-13"></i><i class="dia" data-date="2026-09-14"></i><i class="dia" data-date="2026-09-15"></i><i class="dia" data-date="2026-09-16"></i><i class="dia" data-date="2026-09-17"></i><i class="dia" data-date="2026-09-18"></i><i class="dia" data-date="2026-09-19"></i><i class="dia" data-date="2026-09-20"></i><i class="dia" data-date="2026-09-21"></i><i class="dia" data-date="2026-09-22"></i><i class="dia" data-date="2026-09-23"></i><i class="dia" data-date="2026-09-24"></i><i class="dia" data-date="2026-09-25"></i><i class="dia" data-date="2026-09-26"></i><i class="dia" data-date="2026-09-27"></i><i class="dia" data-date="2026-09-28"></i><i class="dia" data-date="2026-09-29"></i><i class="dia" data-date="2026-09-30"></i><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i><i class="dia dia-vacio"></i></div>
             </div>
-            <p class="dias-grid-texto"><strong>16</strong>días para<br>el cierre</p>
+            <p class="dias-grid-texto" id="dias-texto-movil"><strong>16</strong>días para<br>el cierre</p>
           </div>
           <dl class="convocatoria-lista">
             <div><dt>Cierre de registro</dt><dd><time datetime="2026-09-30">30.09.26</time></dd></div>
@@ -550,5 +550,35 @@
   </div>
 </footer>
 <a class="whatsapp-flotante" href="https://wa.me/529999977170" aria-label="Escribir por WhatsApp"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.85 11.85 0 0 0 12.07 0C5.49 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L.04 24l6.25-1.64a11.9 11.9 0 0 0 5.77 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.18-3.48-8.42ZM12.07 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.71.97.99-3.62-.24-.37a9.88 9.88 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.9-9.92 9.9Zm5.43-7.41c-.3-.15-1.77-.88-2.04-.98-.28-.1-.48-.15-.68.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.53.07-.8.37-.28.3-1.05 1.03-1.05 2.5 0 1.48 1.08 2.91 1.23 3.11.15.2 2.11 3.22 5.12 4.51.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.57-.09 1.77-.72 2.02-1.43.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"/></svg></a>
+<!-- Único script del sitio: calcula los días restantes hasta el cierre de registro en el navegador de quien visita, para no tener que actualizar el número a mano. Si falla por cualquier motivo, queda el valor fijo ya escrito arriba. -->
+<script>
+(function(){
+  try{
+    var hoy=new Date();hoy.setHours(0,0,0,0);
+    var cierre=new Date(2026,8,30);cierre.setHours(0,0,0,0);
+    var restantes=Math.round((cierre-hoy)/86400000);
+    if(restantes<0)restantes=0;
+    var palabra=restantes===1?'día':'días';
+
+    var numDesktop=document.getElementById('dias-num-desktop');
+    if(numDesktop)numDesktop.textContent=restantes;
+
+    var hueco=document.getElementById('dias-hueco-desktop');
+    if(hueco)hueco.setAttribute('aria-label','Quedan '+restantes+' '+palabra+' para el cierre de registro');
+
+    var textoMovil=document.getElementById('dias-texto-movil');
+    if(textoMovil)textoMovil.innerHTML='<strong>'+restantes+'</strong>'+palabra+' para<br>el cierre';
+
+    var grid=document.getElementById('dias-grid');
+    if(grid){
+      var celdas=grid.querySelectorAll('[data-date]');
+      for(var i=0;i<celdas.length;i++){
+        var fecha=new Date(celdas[i].getAttribute('data-date')+'T00:00:00');
+        celdas[i].classList.toggle('dia-dorado',fecha>hoy&&fecha<=cierre);
+      }
+    }
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
