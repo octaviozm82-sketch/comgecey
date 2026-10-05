@@ -4,15 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
+<!-- ===================== CONFIGURACIÓN DE LA CONVOCATORIA =====================
+  Esto es lo ÚNICO que hay que editar en cada convocatoria. A partir de estas líneas el sitio
+  calcula solo: cuenta regresiva, calendario móvil, fechas visibles, año y textos para buscadores.
+  - Fechas en formato AAAA-MM-DD (año-mes-día).
+  - cierre: último día para registro y entrega de documentos.
+  - examen: fecha del examen; mientras no exista, déjalo en null y el sitio dirá "Por confirmar".
+  - Al pasar la fecha de cierre, el sitio muestra solo "Registro cerrado" (sin días en negativo).
+  Lo único que queda escrito a mano fuera de aquí es llms.txt (resumen para asistentes de IA).
+============================================================================== -->
+<script>
+window.CONVOCATORIA = {
+  anio: 2027,
+  cierre: "2027-01-31",
+  examen: null
+};
+</script>
 <title>Examen de Certificación en Medicina General Yucatán 2027</title>
-<meta name="description" content="Examen en línea en 2027 (fecha por confirmar); registro hasta el 31 de enero de 2027, cuota $4,500 MXN. Requisitos y asesoría por WhatsApp para médicos de Yucatán.">
+<meta name="description" content="Examen en línea de certificación en Medicina General para médicos de Yucatán. Cuota $4,500 MXN. Consulte requisitos, fecha de cierre de registro y asesoría por WhatsApp.">
 <link rel="canonical" href="https://comgecey.vercel.app/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C.">
 <meta property="og:url" content="https://comgecey.vercel.app/">
 <meta property="og:title" content="Examen de Certificación en Medicina General Yucatán 2027">
-<meta property="og:description" content="Registro hasta el 31 de enero de 2027. Examen en línea en 2027, fecha por confirmar. Cuota $4,500.00 MXN.">
+<meta property="og:description" content="Examen en línea de certificación en Medicina General en Yucatán. Cuota $4,500.00 MXN. Consulte requisitos y fechas vigentes.">
 <meta property="og:image" content="https://comgecey.vercel.app/assets/sello-comgecey.svg">
 <meta property="og:image:alt" content="Sello del Consejo de Médicos Generales Certificados del Estado de Yucatán, A.C.">
 <meta property="og:image:width" content="88">
@@ -233,6 +249,11 @@
 .countdown-date{margin:0;font-size:1.9cqi;color:#ded2d5;padding-bottom:1.1cqi;border-bottom:1px solid #805461}
 .countdown-num{margin:0;font-family:Georgia,serif;font-weight:400;font-size:9.6cqi;line-height:.85;color:var(--accent);text-shadow:0 0 18px rgba(240,210,138,.45)}
 .countdown-label{margin:0;font-family:Georgia,serif;font-weight:400;font-size:3.3cqi;line-height:1;color:var(--accent)}
+.countdown-parche{display:none;position:absolute;left:43%;width:14%;top:46.2%;height:3.8%;background:#3e0b18}
+.registro-cerrado .countdown-parche{display:block}
+.registro-cerrado .countdown-num{font-size:4.8cqi;line-height:1;white-space:nowrap}
+.registro-cerrado .dias-grid-texto strong{font-size:26px}
+.aviso-cierre{margin:0;padding:18px 20px 22px;text-align:center;font-family:Georgia,serif;font-size:18px;line-height:1.4;color:var(--navy-ink)}
 .convocatoria-valor{position:absolute;top:79.1%;bottom:14.4%;display:flex;align-items:center;justify-content:center;margin:0;font-family:Georgia,serif;font-weight:400;font-size:2.16cqi;line-height:1;color:var(--accent);text-align:center;text-decoration:none;white-space:nowrap}
 .convocatoria-valor-cierre{left:6.5%;right:77.7%}
 .convocatoria-valor-examen{left:29.9%;right:54.5%}
@@ -391,7 +412,7 @@
       <a class="button" href="./solicitud-certificacion.pdf" download><span class="brillo" aria-hidden="true"></span>Descargar la solicitud</a>
     </div>
     <div class="hero-caption">
-      <p class="edition">Convocatoria 2027</p>
+      <p class="edition">Convocatoria <span data-conv="anio">2027</span></p>
       <p class="hero-caption-texto">Para médicos generales con cédula profesional que ejercen en una institución pública o privada.</p>
     </div>
   </section>
@@ -401,10 +422,11 @@
         <img class="convocatoria-imagen" src="./assets/dias-restantes.webp" width="1672" height="941" loading="lazy" alt="Convocatoria 2027. Cierre de registro y documentos, 31 de enero de 2027. Examen en línea, fecha por confirmar. Cuota del trámite, $4,500.00 MXN. Entrega de documentos, recepción en Mérida.">
         <div class="countdown-hueco" id="dias-hueco-desktop" role="img" aria-label="Quedan 119 días para el cierre de registro">
           <p class="countdown-num" id="dias-num-desktop">119</p>
-          <p class="countdown-label">días</p>
+          <p class="countdown-label" id="dias-etiqueta-desktop">días</p>
         </div>
-        <time class="convocatoria-valor convocatoria-valor-cierre" datetime="2027-01-31">31 ene 2027</time>
-        <p class="convocatoria-valor convocatoria-valor-examen">Por confirmar</p>
+        <span class="countdown-parche" aria-hidden="true"></span>
+        <time class="convocatoria-valor convocatoria-valor-cierre" data-conv="cierre-corto" datetime="2027-01-31">31 ene 2027</time>
+        <p class="convocatoria-valor convocatoria-valor-examen" data-conv="examen-corto">Por confirmar</p>
         <p class="convocatoria-valor convocatoria-valor-cuota">$4,500 MXN</p>
         <p class="convocatoria-valor convocatoria-valor-entrega">Mérida</p>
       </div>
@@ -422,13 +444,14 @@
             <p class="dias-grid-texto" id="dias-texto-movil"><strong>119</strong>días para<br>el cierre</p>
           </div>
           <dl class="convocatoria-lista">
-            <div><dt>Cierre de registro</dt><dd><time datetime="2027-01-31">31.01.27</time></dd></div>
-            <div><dt>Examen</dt><dd>Por confirmar</dd></div>
+            <div><dt>Cierre de registro</dt><dd><time data-conv="cierre-numerico" datetime="2027-01-31">31.01.27</time></dd></div>
+            <div><dt>Examen</dt><dd data-conv="examen-numerico">Por confirmar</dd></div>
             <div><dt>Valor</dt><dd>$4,500 MXN</dd></div>
             <div><dt>Entrega <a href="#requisitos">documentos</a></dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Mérida</a></dd></div>
           </dl>
         </div>
       </div>
+      <p class="aviso-cierre" id="aviso-cierre" hidden>El registro de esta convocatoria ya cerró. La fecha de la próxima convocatoria se publicará en este sitio.</p>
     </aside>
   </section>
   <section id="examen" class="section">
@@ -461,7 +484,7 @@
       <div class="requisitos-imagen-wrap">
         <img class="requisitos-imagen" src="./assets/prepare-su-documentacion.webp" width="1672" height="941" loading="lazy" alt="Prepare su documentación. Revise su expediente antes de entregarlo. 1. Título de médico cirujano. 2. Cédula profesional. 3. Identificación oficial. 4. CURP. 5. Comprobante de ejercicio profesional. 6. Solicitud oficial firmada. 7. Fotografías, dos tamaño diploma. 8. Comprobante de pago. Entrega en Mérida, Yucatán: Calle 88B #506 x 90A, Fracc. Itzáes, CP 97068. Fecha límite: 31 de enero de 2027.">
         <!-- Actualizar manualmente al publicar: única fecha superpuesta a la imagen, para que no quede fija en el arte. -->
-        <time class="requisitos-fecha" datetime="2027-01-31">31 de enero de 2027</time>
+        <time class="requisitos-fecha" data-conv="cierre-largo" datetime="2027-01-31">31 de enero de 2027</time>
         <a class="requisitos-zona requisitos-zona-solicitud" href="./solicitud-certificacion.pdf" download>Descargar la solicitud</a>
         <a class="requisitos-zona requisitos-zona-mapa" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Ver dirección en Google Maps</a>
       </div>
@@ -484,7 +507,7 @@
         <div class="delivery">
           <h3>Dónde y cuándo entregar</h3>
           <address>Calle 88B #506 x 90A, Fracc. Itzáes, CP 97068, Mérida, Yucatán.</address>
-          <p>Fecha límite: <time datetime="2027-01-31">31 de enero de 2027</time>.</p>
+          <p>Fecha límite: <time data-conv="cierre-largo" datetime="2027-01-31">31 de enero de 2027</time>.</p>
           <!-- PENDIENTE CLIENTE: confirmar días y horas de recepción de documentos. -->
 
           <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%2088B%20%23506%20x%2090A%2C%20Fracc.%20Itz%C3%A1es%2C%20CP%2097068%2C%20M%C3%A9rida%2C%20Yucat%C3%A1n">Consultar dirección en Google Maps</a>
@@ -556,32 +579,125 @@
   </div>
 </footer>
 <a class="whatsapp-flotante" href="https://wa.me/529999977170" aria-label="Escribir por WhatsApp"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.85 11.85 0 0 0 12.07 0C5.49 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L.04 24l6.25-1.64a11.9 11.9 0 0 0 5.77 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.18-3.48-8.42ZM12.07 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.71.97.99-3.62-.24-.37a9.88 9.88 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.9-9.92 9.9Zm5.43-7.41c-.3-.15-1.77-.88-2.04-.98-.28-.1-.48-.15-.68.15-.2.3-.77.98-.95 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.53.07-.8.37-.28.3-1.05 1.03-1.05 2.5 0 1.48 1.08 2.91 1.23 3.11.15.2 2.11 3.22 5.12 4.51.72.31 1.28.5 1.71.64.72.23 1.37.2 1.88.12.57-.09 1.77-.72 2.02-1.43.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"/></svg></a>
-<!-- Único script del sitio: calcula los días restantes hasta el cierre de registro en el navegador de quien visita, para no tener que actualizar el número a mano. Si falla por cualquier motivo, queda el valor fijo ya escrito arriba. -->
+<!-- Único script del sitio. Lee window.CONVOCATORIA (bloque de configuración al inicio del archivo) y calcula en el navegador: cuenta regresiva, estado "registro cerrado", calendario móvil, fechas visibles, año y textos para buscadores. Si algo falla, queda el texto ya escrito en el HTML. -->
 <script>
 (function(){
   try{
+    var C=window.CONVOCATORIA||{};
+    var MES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    var MES3=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+    function pad(n){return (n<10?'0':'')+n;}
+    function fecha(s){
+      var p=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(s||''));
+      if(!p)return null;
+      var d=new Date(+p[1],+p[2]-1,+p[3]);
+      return isNaN(d.getTime())?null:d;
+    }
+    var FORMATO={
+      iso:function(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());},
+      corto:function(d){return d.getDate()+' '+MES3[d.getMonth()]+' '+d.getFullYear();},
+      numerico:function(d){return pad(d.getDate())+'.'+pad(d.getMonth()+1)+'.'+String(d.getFullYear()).slice(2);},
+      largo:function(d){return d.getDate()+' de '+MES[d.getMonth()]+' de '+d.getFullYear();}
+    };
+    function $(id){return document.getElementById(id);}
+
+    var anio=C.anio||new Date().getFullYear();
+    var cierre=fecha(C.cierre), examen=fecha(C.examen);
+    if(!cierre)return;
     var hoy=new Date();hoy.setHours(0,0,0,0);
-    var cierre=new Date(2027,0,31);cierre.setHours(0,0,0,0);
     var restantes=Math.round((cierre-hoy)/86400000);
-    if(restantes<0)restantes=0;
-    var palabra=restantes===1?'día':'días';
 
-    var numDesktop=document.getElementById('dias-num-desktop');
-    if(numDesktop)numDesktop.textContent=restantes;
+    /* Fechas y año visibles */
+    var marcados=document.querySelectorAll('[data-conv]');
+    for(var i=0;i<marcados.length;i++){
+      var el=marcados[i], clave=el.getAttribute('data-conv');
+      if(clave==='anio'){el.textContent=anio;continue;}
+      var par=clave.split('-'), d=par[0]==='cierre'?cierre:examen, f=FORMATO[par[1]];
+      if(!f)continue;
+      if(d){el.textContent=f(d);if(el.tagName==='TIME')el.setAttribute('datetime',FORMATO.iso(d));}
+      else{el.textContent='Por confirmar';el.removeAttribute('datetime');}
+    }
 
-    var hueco=document.getElementById('dias-hueco-desktop');
-    if(hueco)hueco.setAttribute('aria-label','Quedan '+restantes+' '+palabra+' para el cierre de registro');
+    /* Cuenta regresiva y estado de registro */
+    var num=$('dias-num-desktop'), etiqueta=$('dias-etiqueta-desktop'), hueco=$('dias-hueco-desktop'), movil=$('dias-texto-movil');
+    var cerrado=restantes<0, textoNum, textoEtiqueta, textoMovil, aria;
+    if(cerrado){
+      textoNum='Registro';textoEtiqueta='cerrado';
+      textoMovil='<strong>Cerrado</strong><br>el registro';
+      aria='El registro de esta convocatoria ya cerró';
+    }else if(restantes===0){
+      textoNum='Hoy';textoEtiqueta='último día';
+      textoMovil='<strong>Hoy</strong>último día<br>para el cierre';
+      aria='Hoy es el último día para el cierre de registro';
+    }else{
+      var palabra=restantes===1?'día':'días';
+      textoNum=restantes;textoEtiqueta=palabra;
+      textoMovil='<strong>'+restantes+'</strong>'+palabra+' para<br>el cierre';
+      aria=(restantes===1?'Queda ':'Quedan ')+restantes+' '+palabra+' para el cierre de registro';
+    }
+    if(num)num.textContent=textoNum;
+    if(etiqueta)etiqueta.textContent=textoEtiqueta;
+    if(hueco)hueco.setAttribute('aria-label',aria);
+    if(movil)movil.innerHTML=textoMovil;
+    if(cerrado){
+      document.documentElement.classList.add('registro-cerrado');
+      var aviso=$('aviso-cierre');if(aviso)aviso.hidden=false;
+    }
 
-    var textoMovil=document.getElementById('dias-texto-movil');
-    if(textoMovil)textoMovil.innerHTML='<strong>'+restantes+'</strong>'+palabra+' para<br>el cierre';
-
-    var grid=document.getElementById('dias-grid');
-    if(grid){
-      var celdas=grid.querySelectorAll('[data-date]');
-      for(var i=0;i<celdas.length;i++){
-        var fecha=new Date(celdas[i].getAttribute('data-date')+'T00:00:00');
-        celdas[i].classList.toggle('dia-dorado',fecha>hoy&&fecha<=cierre);
+    /* Calendario móvil: los 3 meses que terminan en el mes del cierre, 14 semanas de 7 días (lunes a domingo) */
+    var grid=$('dias-grid'), meses=document.querySelector('.dias-grid-meses');
+    if(grid&&meses){
+      var inicio=new Date(cierre.getFullYear(),cierre.getMonth()-2,1);
+      var vacios=(inicio.getDay()+6)%7, celdas='', total=vacios, k;
+      for(k=0;k<vacios;k++)celdas+='<i class="dia dia-vacio"></i>';
+      for(var d2=new Date(inicio);d2<=cierre;d2.setDate(d2.getDate()+1)){
+        celdas+='<i class="dia" data-date="'+FORMATO.iso(d2)+'"></i>';total++;
       }
+      for(;total<98;total++)celdas+='<i class="dia dia-vacio"></i>';
+      grid.innerHTML=celdas;
+      var etiquetasMes='';
+      for(k=0;k<3;k++){
+        var m=new Date(inicio.getFullYear(),inicio.getMonth()+k,1);
+        var col=Math.floor((vacios+Math.round((m-inicio)/86400000))/7)+1;
+        etiquetasMes+='<span style="grid-column:'+col+'">'+MES3[m.getMonth()]+'.</span>';
+      }
+      meses.innerHTML=etiquetasMes;
+      var dias=grid.querySelectorAll('[data-date]');
+      for(k=0;k<dias.length;k++){
+        var dia=fecha(dias[k].getAttribute('data-date'));
+        dias[k].classList.toggle('dia-dorado',dia>hoy&&dia<=cierre);
+      }
+    }
+
+    /* Textos alternativos de las dos imágenes con fechas */
+    var textoExamen=examen?FORMATO.largo(examen):'fecha por confirmar';
+    var imgConv=document.querySelector('.convocatoria-imagen');
+    if(imgConv)imgConv.setAttribute('alt','Convocatoria '+anio+'. Cierre de registro y documentos, '+FORMATO.largo(cierre)+'. Examen en línea, '+textoExamen+'. Cuota del trámite, $4,500.00 MXN. Entrega de documentos, recepción en Mérida.');
+    var imgReq=document.querySelector('.requisitos-imagen');
+    if(imgReq)imgReq.setAttribute('alt',imgReq.getAttribute('alt').replace(/Fecha límite: [^.]+\.\s*$/,'Fecha límite: '+FORMATO.largo(cierre)+'.'));
+
+    /* Título y metadatos para buscadores */
+    var titulo='Examen de Certificación en Medicina General Yucatán '+anio;
+    document.title=titulo;
+    var ogTitulo=document.querySelector('meta[property="og:title"]');
+    if(ogTitulo)ogTitulo.setAttribute('content',titulo);
+    var desc=document.querySelector('meta[name="description"]');
+    if(desc)desc.setAttribute('content','Examen en línea '+(examen?'el '+FORMATO.largo(examen):'en '+anio+' (fecha por confirmar)')+'; registro '+(cerrado?'cerrado el ':'hasta el ')+FORMATO.largo(cierre)+', cuota $4,500 MXN. Requisitos y asesoría por WhatsApp para médicos de Yucatán.');
+
+    /* Datos estructurados (JSON-LD) del examen */
+    var ld=document.querySelector('script[type="application/ld+json"]');
+    if(ld){
+      var datos=JSON.parse(ld.textContent), nodos=datos['@graph']||[];
+      for(var n=0;n<nodos.length;n++){
+        if(nodos[n]['@type']!=='Event')continue;
+        var ev=nodos[n];
+        ev['@id']='https://comgecey.vercel.app/#examen-'+anio;
+        ev.name='Examen Nacional de Certificación en Medicina General · Yucatán '+anio;
+        ev.description='Examen teórico en línea para médicos generales con cédula profesional. '+(examen?'Fecha del examen: '+FORMATO.largo(examen)+'. ':'Fecha del examen por confirmar. ')+'Registro y entrega de documentos hasta el '+FORMATO.largo(cierre)+'.';
+        ev.startDate=examen?FORMATO.iso(examen):String(anio);
+        if(ev.offers)ev.offers.validThrough=FORMATO.iso(cierre);
+      }
+      ld.textContent=JSON.stringify(datos,null,2);
     }
   }catch(e){}
 })();
